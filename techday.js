@@ -171,6 +171,11 @@ Keen.ready(function () {
                     "property_name": "keentroversyId",
                     "property_value": keentroversyId
                 },
+                {
+                    "operator": "exists",
+                    "property_name": "vote",
+                    "property_value": true
+                }
             ],
             timeframe: 'this_3_hours',
             group_by: 'vote'
@@ -201,6 +206,11 @@ Keen.ready(function () {
                     "operator": "eq",
                     "property_name": "keentroversyId",
                     "property_value": keentroversyId
+                },
+                {
+                    "operator": "exists",
+                    "property_name": "vote",
+                    "property_value": true
                 }
             ],
             timeframe: 'this_4_hours',
@@ -230,6 +240,11 @@ Keen.ready(function () {
                     "operator": "eq",
                     "property_name": "keentroversyId",
                     "property_value": keentroversyId
+                },
+                {
+                    "operator": "exists",
+                    "property_name": "vote",
+                    "property_value": true
                 }
             ],
             timeframe: 'this_4_hours',
