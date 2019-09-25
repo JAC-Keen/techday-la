@@ -8,8 +8,6 @@ const geoProject = new KeenAnalysis({
     readKey: 'C60DB577779B643B528C4DB57953168C22D3D32709D58B6B823CE39C2E2F9885079046E28286D0A2820C9E085995F3F39C550504DA46370E1724289FB623840823822816C52AF5AD85A35F4BF9A8FFA494EE6DF5EA28BEDBA3988500A598202D'
 });
 
-// change this when ready for prod
-var keentroversyId = "TechDaySept2019Test"
 // updated variable
 var keentroversyId = "TechDaySept2019"
 
@@ -160,7 +158,7 @@ Keen.ready(function () {
     const votesChart = new KeenDataviz({
         container: '#currentVotes',
         title: "Number of Votes",
-        type: 'bar'
+        type: 'pie'
     });
 
     client
@@ -175,8 +173,7 @@ Keen.ready(function () {
                 },
             ],
             timeframe: 'this_3_hours',
-            //interval: 'hourly',
-            group_by: 'url.full'
+            group_by: 'vote'
         })
         .then(function (results){
             votesChart.render(results);
