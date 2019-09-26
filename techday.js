@@ -177,7 +177,7 @@ Keen.ready(function () {
                     "property_value": true
                 }
             ],
-            timeframe: 'this_3_hours',
+            timeframe: 'this_8_hours',
             group_by: 'vote'
         })
         .then(function (results){
@@ -213,7 +213,7 @@ Keen.ready(function () {
                     "property_value": true
                 }
             ],
-            timeframe: 'this_4_hours',
+            timeframe: 'this_8_hours',
         })
         .then(function (results) {
             voteMetric.render(results);
@@ -247,7 +247,7 @@ Keen.ready(function () {
                     "property_value": true
                 }
             ],
-            timeframe: 'this_4_hours',
+            timeframe: 'this_8_hours',
             interval: 'hourly'
         })
         .then(function (results) {
