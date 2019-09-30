@@ -166,7 +166,7 @@ Keen.ready(function () {
     const votesChart = new KeenDataviz({
         container: '#currentVotes',
         title: "Number of Votes",
-        type: 'pie'
+        type: 'donut'
     });
 
     client
