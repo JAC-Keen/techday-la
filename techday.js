@@ -187,7 +187,7 @@ Keen.ready(function () {
             ],
 //             timeframe: 'this_30_days'
             timeframe: {"end":"2019-10-31T00:00:00.000","start":"2019-09-30T00:00:00.000"},
-            timezone: "US/Central"
+            timezone: "US/Central",
             group_by: 'vote'
         })
         .then(function (results){
