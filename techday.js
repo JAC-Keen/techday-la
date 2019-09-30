@@ -38,7 +38,9 @@ Keen.ready(function () {
                     "property_value": keentroversyId
                 }
             ],
-            timeframe: 'this_30_days'
+//             timeframe: 'this_30_days'
+               timeframe: {"end":"2019-10-31T00:00:00.000","start":"2019-09-30T00:00:00.000"},
+               timezone: "US/Central"
         })
         .then(function (results){
             voteOne.render(results);
@@ -73,7 +75,9 @@ Keen.ready(function () {
                     "property_value": keentroversyId
                 }
             ],
-            timeframe: 'this_30_days'
+//             timeframe: 'this_30_days'
+               timeframe: {"end":"2019-10-31T00:00:00.000","start":"2019-09-30T00:00:00.000"},
+               timezone: "US/Central"
         })
         .then(function (results){
             voteTwo.render(results);
@@ -108,7 +112,9 @@ Keen.ready(function () {
                     "property_value": keentroversyId
                 }
             ],
-            timeframe: 'this_30_days'
+//             timeframe: 'this_30_days'
+               timeframe: {"end":"2019-10-31T00:00:00.000","start":"2019-09-30T00:00:00.000"},
+               timezone: "US/Central"
         })
         .then(function (results){
             voteThree.render(results);
@@ -143,7 +149,9 @@ Keen.ready(function () {
                     "property_value": keentroversyId
                 }
             ],
-            timeframe: 'this_30_days'
+//             timeframe: 'this_30_days'
+               timeframe: {"end":"2019-10-31T00:00:00.000","start":"2019-09-30T00:00:00.000"},
+               timezone: "US/Central"
         })
         .then(function (results){
             voteFour.render(results);
@@ -177,7 +185,9 @@ Keen.ready(function () {
                     "property_value": true
                 }
             ],
-            timeframe: 'this_8_hours',
+//             timeframe: 'this_30_days'
+            timeframe: {"end":"2019-10-31T00:00:00.000","start":"2019-09-30T00:00:00.000"},
+            timezone: "US/Central"
             group_by: 'vote'
         })
         .then(function (results){
@@ -213,7 +223,9 @@ Keen.ready(function () {
                     "property_value": true
                 }
             ],
-            timeframe: 'this_8_hours',
+//             timeframe: 'this_30_days'
+               timeframe: {"end":"2019-10-31T00:00:00.000","start":"2019-09-30T00:00:00.000"},
+               timezone: "US/Central"
         })
         .then(function (results) {
             voteMetric.render(results);
@@ -247,7 +259,9 @@ Keen.ready(function () {
                     "property_value": true
                 }
             ],
-            timeframe: 'this_8_hours',
+//             timeframe: 'this_30_days'
+            timeframe: {"end":"2019-10-31T00:00:00.000","start":"2019-09-30T00:00:00.000"},
+            timezone: "US/Central",
             interval: 'hourly'
         })
         .then(function (results) {
